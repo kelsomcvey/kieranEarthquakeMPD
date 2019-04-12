@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Kieran EarthQuake App</string>
+
+    <string name="getButton">Get Earthquakes</string>
+    <string name="medDepth">Med</string>
+    <string name="lowDepth">Shallow</string>
+    <string name="deepDepth">Deep</string>
+    <string name="highMag">High</string>
+    <string name="lowMag">Low</string>
+    <string name="medMag">Med</string>
+    <string name="severityLegend">Magnitude Legend</string>
+    <string name="depthLegend">Depth Legend</string>
+
+
+
+
+
+
+    <string name="mapsAPIkey">AIzaSyD9I-4PQZp9V3dPKjN_dCpMOfJWwpF_jrQ</string>
+
+<string-array name="sorting">
+    <item>Sort by magnitude</item>
+    <item>Sort by most northern</item>
+    <item>Sort by depth</item>
+
+
+</string-array>
+
+</resources>

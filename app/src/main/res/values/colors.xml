@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5f16e5</color>
+    <color name="colorPrimaryDark">#8962d1</color>
+    <color name="colorAccent">#9E8F93</color>
+    <color name="lowSeverity">#ADF442</color>
+    <color name="medSeverity">#F7DC6F</color>
+    <color name="highSeverity">#E74C3C</color>
+    <color name="lightText">#D2D2D2</color>
+    <color name="recBackground">#AAAAAD</color>
+
+
+    <color name="shallow">#04DAEC</color>
+    <color name="intermediate">#247896</color>
+    <color name="deep">#001941</color>
+
+</resources>

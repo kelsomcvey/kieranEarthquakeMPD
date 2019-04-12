@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuakeDetail">
+
+    <TextView
+        android:id="@+id/onePub"
+        android:layout_width="257dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.017"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/oneMagnitude"
+        android:layout_width="394dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+
+        android:layout_marginEnd="8dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.024"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oneDepth" />
+
+    <TextView
+        android:id="@+id/oneDepth"
+        android:layout_width="396dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+
+        android:layout_marginEnd="8dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.025"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/severityIndicator" />
+
+
+    <TextView
+        android:id="@+id/severityIndicator"
+        android:layout_width="182dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:padding="10dp"
+        android:text="Severity Indicator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oneTitle" />
+
+    <TextView
+        android:id="@+id/oneTitle"
+        android:layout_width="370dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.023"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/onePub" />
+
+    <TextView
+        android:id="@+id/oneLat"
+        android:layout_width="396dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.025"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oneMagnitude" />
+
+    <TextView
+        android:id="@+id/oneLong"
+        android:layout_width="390dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.024"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oneLat" />
+
+    <TextView
+        android:id="@+id/depthColour"
+        android:layout_width="182dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:padding="10dp"
+        android:text="Depth Indicator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/severityIndicator"
+        app:layout_constraintTop_toBottomOf="@+id/oneTitle" />
+
+
+    <TextView
+        android:id="@+id/interColour"
+        android:layout_width="75dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/lowMag"
+        app:layout_constraintEnd_toStartOf="@+id/shallowColour"
+        app:layout_constraintTop_toBottomOf="@+id/depthKey" />
+
+    <TextView
+        android:id="@+id/deepColour"
+        android:layout_width="75dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/highMag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/depthKey" />
+
+    <TextView
+        android:id="@+id/depthKey"
+        android:layout_width="147dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Magnitude Legend"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/magKey"
+        android:layout_width="147dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:text="Depth Legend"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shallowColour" />
+
+    <TextView
+        android:id="@+id/lowColour"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="12dp"
+        android:text="@string/lowDepth"
+        app:layout_constraintEnd_toStartOf="@+id/medColour"
+        app:layout_constraintTop_toBottomOf="@+id/magKey" />
+
+    <TextView
+        android:id="@+id/medColour"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/medDepth"
+        app:layout_constraintEnd_toStartOf="@+id/highColour"
+        app:layout_constraintTop_toBottomOf="@+id/magKey" />
+
+    <TextView
+        android:id="@+id/highColour"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/deepDepth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/magKey" />
+
+    <TextView
+        android:id="@+id/shallowColour"
+        android:layout_width="75dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/medMag"
+        app:layout_constraintEnd_toStartOf="@+id/deepColour"
+        app:layout_constraintTop_toBottomOf="@+id/depthKey" />
+
+</android.support.constraint.ConstraintLayout>
